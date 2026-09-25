@@ -1,7 +1,20 @@
 {
-  "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [{"source": "/", "destination": "/index.html"}],
+  "rewrites": [
+    {"source": "/about", "destination": "/about.html"},
+    {"source": "/services", "destination": "/services.html"},
+    {"source": "/team", "destination": "/team.html"},
+    {"source": "/why-us", "destination": "/why-us.html"},
+    {"source": "/insights", "destination": "/insights.html"},
+    {"source": "/contact", "destination": "/contact.html"},
+    {"source": "/privacy", "destination": "/privacy.html"},
+    {"source": "/terms", "destination": "/terms.html"},
+    {"source": "/insights/deed-poll-overview", "destination": "/insights/deed-poll-overview.html"},
+    {"source": "/insights/employment-termination-basics", "destination": "/insights/employment-termination-basics.html"},
+    {"source": "/insights/land-transaction-checklist", "destination": "/insights/land-transaction-checklist.html"},
+    {"source": "/insights/served-with-court-papers", "destination": "/insights/served-with-court-papers.html"},
+    {"source": "/insights/succession-first-steps", "destination": "/insights/succession-first-steps.html"}
+  ],
   "headers": [
     {
       "source": "/(.*)",
