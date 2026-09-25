@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://victor-andande-advocates.vercel.app/sitemap.xml
