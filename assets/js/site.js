@@ -25,7 +25,7 @@ contactRail.className='contact-rail';
 contactRail.setAttribute('aria-label','Quick contact');
 contactRail.innerHTML=`
   <div class="contact-rail-stack">
-    <button class="contact-rail-toggle" type="button" aria-expanded="true" aria-controls="quick-contact-actions" aria-label="Hide quick contact options">
+    <button class="contact-rail-toggle" type="button" aria-expanded="true" aria-controls="quick-contact-actions" aria-label="Partially close quick contact options">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
     </button>
     <div class="contact-rail-actions" id="quick-contact-actions">
@@ -42,5 +42,5 @@ const railToggle=contactRail.querySelector('.contact-rail-toggle');
 railToggle.addEventListener('click',()=>{
   const collapsed=contactRail.classList.toggle('is-collapsed');
   railToggle.setAttribute('aria-expanded',String(!collapsed));
-  railToggle.setAttribute('aria-label',collapsed?'Show quick contact options':'Hide quick contact options');
+  railToggle.setAttribute('aria-label',collapsed?'Expand quick contact options':'Partially close quick contact options');
 });
